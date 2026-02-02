@@ -584,3 +584,30 @@ const legalTexts = {
             a.download = "Vortex_Installer.bat";
             document.body.appendChild(a);
             a.click();
+            document.body.removeChild(a);
+        }
+
+        function spawnParticles(x, y) {
+            const colors = ['#FF9933', '#138808', '#000080', '#00F0FF'];
+            for(let i=0; i<12; i++) {
+                const p = document.createElement('div');
+                p.className = 'particle';
+                p.style.left = x + 'px'; p.style.top = y + 'px';
+                p.style.background = colors[Math.floor(Math.random()*colors.length)];
+                p.style.width = (Math.random()*8+4)+'px'; p.style.height = p.style.width;
+                document.body.appendChild(p);
+                
+                const dx = (Math.random()-0.5)*250;
+                const dy = (Math.random()-0.5)*250;
+                
+                p.animate([
+                    {transform:'translate(0,0) scale(1)', opacity:1}, 
+                    {transform:`translate(${dx}px, ${dy}px) scale(0)`, opacity:0}
+                ], {duration: 600, easing: 'cubic-bezier(0, .9, .57, 1)'}).onfinish=()=>p.remove();
+            }
+        }
+
+        window.onload = init;
+    </script>
+</body>
+</html>
