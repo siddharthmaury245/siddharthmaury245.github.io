@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow standard GitHub system folders (Good for SEO hygiene)
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+
+# Direct Path to Sitemap (Very Important for Ranking)
+Sitemap: https://siddharthmaury245.github.io/VORTEX-SUITE/sitemap.xml
