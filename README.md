@@ -16,7 +16,7 @@
   <br>
   
   <p align="center">
-    <strong>Install 115+ Apps in 1 Click • No Ads • No Bloatware • 100% Free</strong>
+    <strong>Install 115+ Apps in 1 Click • 100% Free • No Bloatware • Secure & Fast</strong>
     <br />
     <br />
     <a href="https://siddharthmaury245.github.io/VORTEX-SUITE/"><strong>🚀 Launch Live App</strong></a>
